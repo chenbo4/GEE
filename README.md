@@ -1,1 +1,2 @@
-# GEE
+This repository provides codes required for the paper "Generalized estimating equation modeling on correlated microbiome sequencing data with longitudinal measures", https://doi.org/10.1371/journal.pcbi.1008108.
+Currently, there are two files included. "cor2zcor.r" contains the function to produce correlation strucutre matrix with a toy example. "simulation.r" contains the code to reproduce the simulation results in our paper.
