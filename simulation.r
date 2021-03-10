@@ -1,7 +1,6 @@
 set.seed(2)
 library(geepack)
 library(mvtnorm)
-library(xtable)
 library(mipfp)
 library(lme4)
 n=1000
@@ -11,7 +10,7 @@ M=dim(cor.index)[1]
 K=max(cor.index)
 J=1000
 
-rho.B=c(0.5,0.5,0)
+rho.B=c(0.3,0.3,0)
 temp=as.numeric(cor.index)
 for(k in 1:K){
 temp[temp==k]=rho.B[k]
@@ -19,7 +18,7 @@ temp[temp==k]=rho.B[k]
 cor.number.B=matrix(temp,nrow=M,ncol=M)
 diag(cor.number.B)=1
 
-rho.N=c(-0.3,-0.3,0)
+rho.N=c(0.3,0.3,0)
 temp=as.numeric(cor.index)
 for(k in 1:K){
 temp[temp==k]=rho.N[k]
